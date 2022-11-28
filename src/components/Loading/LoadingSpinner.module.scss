@@ -1,0 +1,14 @@
+@keyframes loadingspin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.LoadingSpinner {
+  pointer-events: none;
+  border: 3px solid transparent;
+  border-color: #555;
+  border-top-color: #eceeef;
+  border-radius: 50%;
+  animation: loadingspin 1s linear infinite;
+}
