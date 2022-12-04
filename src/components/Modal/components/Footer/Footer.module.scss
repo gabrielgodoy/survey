@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navButton {
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: default;
+}

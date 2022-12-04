@@ -21,6 +21,7 @@ interface IModalExtraProps {
   minWidth?: number | string
   width?: string
   maxWidth?: number | string
+  minHeight?: number | string
   height?: string
   maxHeight?: string
   isLoading?: boolean
@@ -45,6 +46,7 @@ export function Modal({
   maxWidth,
   height,
   maxHeight,
+  minHeight,
   hideBackdrop,
   customStyle,
   ...restProps
@@ -67,6 +69,7 @@ export function Modal({
           width,
           height,
           maxHeight,
+          minHeight,
           ...customStyle,
         },
       }}
@@ -102,7 +105,7 @@ export function Modal({
 
       <DialogContent
         sx={{
-          padding: '0.8rem',
+          padding: '0',
           ...(!title && hasCloseIcon && { paddingTop: '45px' }),
           ...(footer && { paddingBottom: 0 }),
         }}

@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  width: 400%;
+  display: flex;
+  position: relative;
+  transition: left 0.3s;
+  background: #222;
+  padding: 10px 0;
+
+  &.formStep1 {
+    left: 0%;
+  }
+
+  &.formStep2 {
+    left: -100%;
+  }
+
+  &.formStep3 {
+    left: -200%;
+  }
+
+  &.formStep4 {
+    left: -300%;
+  }
+}
+
+:global(.MuiDialogContent-root) {
+  overflow: hidden;
+}
+
+.step1,
+.step2,
+.step3,
+.step4 {
+  padding: 0 0.8rem;
+  width: 25%;
+}
+
+.inputs {
+  display: flex;
+  grid-gap: 28px;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.stepTitle {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid #444;
+  padding: 5px 0;
+}
+
+.summaryLabel {
+  margin-right: 12px;
+}
+
+.summaryValue {
+  font-size: 20px;
+}
